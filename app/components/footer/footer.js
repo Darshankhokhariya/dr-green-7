@@ -169,25 +169,25 @@ export default async function Footer() {
                             </p>
                             <div className="flex flex-col gap-y-4">
                                 <Link
-                                    href="/"
+                                    href="https://drgreennft.com/"
                                     className="text-base font-medium font-montserrat"
                                 >
                                     About Us
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="/#process"
                                     className="text-base font-medium font-montserrat"
                                 >
                                     The Process
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="#news"
                                     className="text-base font-medium font-montserrat"
                                 >
                                     News
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="mailto:support@drgreennft.com"
                                     className="text-base font-medium font-montserrat"
                                 >
                                     Contact
