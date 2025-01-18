@@ -19,7 +19,7 @@ export default async function OrdersSingle({ params }) {
             case "PAID":
                 return "text-[#30e5f3]";
             case "DELIVERED":
-                return "text-[#fc69f8]";
+                return "text-[#0aba90]";
             default:
                 return "text-[#30e5f3]";
         }
@@ -65,7 +65,7 @@ export default async function OrdersSingle({ params }) {
                 <div className="col-span-2 relative hidden md:block">
                     <DashboardNav />
                 </div>
-                <div className="rounded-[20px] border-2 border-[#30e5f3] p-8 xl:p-20 col-span-6">
+                <div className="rounded-[20px] border-2 border-black p-8 xl:p-20 col-span-6">
                     <p className="text-3xl md:text-5xl font-semibold secondary-font">
                         Order <br />{" "}
                     </p>
@@ -131,7 +131,7 @@ export default async function OrdersSingle({ params }) {
                                         </div>
                                         {getOrderRes.data.orderDetails
                                             .orderLines.length !=
-                                        i + 1 ? (
+                                            i + 1 ? (
                                             <hr className="border-none h-[1px] bg-white mb-8 mt-8" />
                                         ) : (
                                             ""
@@ -166,7 +166,7 @@ export default async function OrdersSingle({ params }) {
                             </p>
                         </div>
                     </div>
-                    <hr className="border-none h-[2px] bg-[#30e5f3] mb-8 mt-8" />
+                    <hr className="border-none h-[2px] bg-[#0aba90] mb-8 mt-8" />
                     <div>
                         <div className="grid md:flex gap-x-8 gap-y-4">
                             <p className="text-xl">

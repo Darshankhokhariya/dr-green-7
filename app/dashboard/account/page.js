@@ -11,7 +11,7 @@ export default async function Account() {
 
     const adminApprovalClass = {
         PENDING: "text-white",
-        VERIFIED: "text-[#fc69f8]",
+        VERIFIED: "text-[#0aba90]",
         REJECTED: "text-white",
     };
 
@@ -35,7 +35,7 @@ export default async function Account() {
                 <div className="col-span-2 relative hidden md:block">
                     <DashboardNav />
                 </div>
-                <div className="rounded-[20px] border-2 border-[#30e5f3] p-8 xl:p-20 col-span-6">
+                <div className="rounded-[20px] border-2 border-black p-8 xl:p-20 col-span-6">
                     <p className="text-3xl md:text-5xl font-semibold mb-8 secondary-font">
                         Account
                     </p>
@@ -69,7 +69,7 @@ export default async function Account() {
                                 Active:{" "}
                                 <strong>
                                     {user?.dappUser?.isActive ? (
-                                        <span className="text-[#fc69f8]">
+                                        <span className="text-[#0aba90]">
                                             YES
                                         </span>
                                     ) : (
@@ -81,7 +81,7 @@ export default async function Account() {
                                 KYC Verified:{" "}
                                 <strong>
                                     {user?.dappUser?.isKYCVerified ? (
-                                        <span className="text-[#fc69f8]">
+                                        <span className="text-[#0aba90]">
                                             YES
                                         </span>
                                     ) : (
@@ -98,8 +98,8 @@ export default async function Account() {
                                         <span
                                             className={
                                                 adminApprovalClass[
-                                                    user?.dappUser
-                                                        ?.adminApproval
+                                                user?.dappUser
+                                                    ?.adminApproval
                                                 ]
                                             }
                                         >
@@ -110,11 +110,11 @@ export default async function Account() {
                             </li>
                         </ul>
                     </div>
-                    <hr className="border-none h-[2px] bg-[#30e5f3] mb-8" />
+                    <hr className="border-none h-[2px] bg-[#696969] mb-8" />
                     <div className="flex justify-between items-center flex-wrap gap-4">
                         <Link href="/reset-password">
                             <button
-                                className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                                className="secondary-font uppercase py-3 px-6 border-[#0aba90] bg-[#0aba90] rounded-[7px] border-2 text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                                 title="RESET PASSWORD"
                             >
                                 RESET PASSWORD

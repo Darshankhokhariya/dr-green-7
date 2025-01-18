@@ -39,7 +39,7 @@ export default async function EditAccount() {
                 <div className="col-span-2 relative hidden md:block">
                     <DashboardNav />
                 </div>
-                <div className="rounded-[20px] border-2 border-[#30e5f3] p-8 xl:p-20 col-span-6">
+                <div className="rounded-[20px] border-2 border-black p-8 xl:p-20 col-span-6">
                     <p className="text-3xl md:text-5xl font-semibold mb-8 secondary-font">
                         Edit My Account
                     </p>

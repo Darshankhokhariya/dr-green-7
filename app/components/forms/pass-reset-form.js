@@ -92,15 +92,13 @@ export default function PasswordResetForm(props) {
                 <button
                     type="submit"
                     title="CONFIRM PASSWORD"
-                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
-                        isPending ? "pointer-events-none" : ""
-                    }`}
+                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${isPending ? "pointer-events-none" : ""
+                        }`}
                 >
                     CONFIRM PASSWORD
                     <svg
-                        className={`animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -140,7 +138,7 @@ export default function PasswordResetForm(props) {
             <div>
                 <label htmlFor="email">
                     Confirm Email Address{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <input
@@ -150,11 +148,12 @@ export default function PasswordResetForm(props) {
                         id="email"
                         type="email"
                         autoComplete="email"
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        placeholder="Enter email"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full"
                     />
                 </div>
                 {state?.errors?.email && (
-                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                    <p className="text-red text-sm leading-tight mt-2">
                         {state?.errors?.email}
                     </p>
                 )}
@@ -163,13 +162,12 @@ export default function PasswordResetForm(props) {
                 <button
                     type="submit"
                     title="CONFIRM EMAIL"
-                    className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center"
+                    className="secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center"
                 >
                     CONFIRM EMAIL
                     <svg
-                        className={`animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"

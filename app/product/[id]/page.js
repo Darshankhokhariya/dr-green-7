@@ -80,7 +80,7 @@ export default async function ProductSingle({ params }) {
                         <div>
                             {strain?.isAvailable ? (
                                 <div className="flex gap-2 items-start mb-16">
-                                    <span className="block w-3.5 h-3.5 bg-[#30e5f3] rounded-full mt-1" />
+                                    <span className="block w-3.5 h-3.5 bg-[#0aba90] rounded-full mt-1" />
                                     <p className="flex flex-col text-base">
                                         <span className="opacity-50">
                                             In stock.
@@ -88,9 +88,9 @@ export default async function ProductSingle({ params }) {
                                         <span className="font-bold">
                                             {availableLocations.length
                                                 ? "Available in " +
-                                                  availableLocations
-                                                      .map((loc) => loc)
-                                                      .join(", ")
+                                                availableLocations
+                                                    .map((loc) => loc)
+                                                    .join(", ")
                                                 : ""}
                                         </span>
                                     </p>

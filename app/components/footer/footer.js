@@ -244,7 +244,7 @@ export default async function Footer() {
                                 className="p-2 flex-grow rounded-[7px] border-2 bg-[#2B2B2B] text-[#2b2b2b] bg-opacity-10 outline-0"
                             />
                             <button
-                                className="uppercase py-4 px-6 rounded-full bg-[#0aba90] border border-[#0aba90] text-[15px] shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
+                                className="uppercase py-4 px-6 rounded-full bg-[#0aba90] text-white border border-[#0aba90] text-[15px] shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                                 title="Check Eligibility"
                             >
                                 Submit

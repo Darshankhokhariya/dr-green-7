@@ -50,13 +50,13 @@ export default function ShopStrainsClient(props) {
                 {strains.map((strain, i) => (
                     <div
                         key={i}
-                        className="rounded-[10px] border border-2 border-[#30e5f3] backdrop-blur-[44px] p-6"
+                        className="rounded-[10px]  border-2 shadow-md backdrop-blur-[44px] p-6"
                     >
                         <div className="flex gap-2 justify-end items-start">
-                            <p className="py-1 px-3 rounded-full bg-[#fc69f8] font-semibold text-[10px] uppercase text-black">
+                            <p className="py-1 px-3 rounded-full bg-gray-200 text-gray-800 font-semibold text-[10px] uppercase">
                                 {strain.flavour}
                             </p>
-                            <p className="py-1 px-3 rounded-full bg-[#fc69f8] font-semibold text-[10px] uppercase text-black">
+                            <p className="py-1 px-3 rounded-full bg-gray-200 text-gray-800 font-semibold text-[10px] uppercase">
                                 {strain.type}
                             </p>
                         </div>
@@ -76,7 +76,7 @@ export default function ShopStrainsClient(props) {
                         </p>
                         <Link href={`/product/${strain.id}`}>
                             <button
-                                className="w-full secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                                className="w-full secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] border-2 text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                                 title="Discover"
                             >
                                 Discover
@@ -87,9 +87,8 @@ export default function ShopStrainsClient(props) {
             </div>
             <div className="text-center mt-6">
                 <button
-                    className={`secondary-font uppercase py-3 px-6 rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out ${
-                        count >= props.totalStrains ? "pointer-events-none" : ""
-                    }
+                    className={`secondary-font uppercase cursor-pointer py-3 px-6 rounded-[7px]  border-black border-2 text-[#0aba90] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out ${count >= props.totalStrains ? "pointer-events-none" : ""
+                        }
                     }`}
                     title={
                         count >= props.totalStrains
@@ -103,9 +102,8 @@ export default function ShopStrainsClient(props) {
                         ? "NO MORE TO SHOW"
                         : "LOAD MORE"}
                     <svg
-                        className={`animate-spin ml-2 h-4 w-4 text-[#fc69f8] ${
-                            loading ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin ml-2 h-4 w-4 text-[#0aba90] ${loading ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"

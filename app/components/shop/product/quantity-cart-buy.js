@@ -57,7 +57,7 @@ export default function QuantityCartBuy(props) {
         <div>
             <div className="flex gap-4 items-center mb-8">
                 <p className="opacity-50">Quantity</p>
-                <div className="py-3 px-4 rounded-full bg-transparent border border-[#30e5f3] border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#30e5f3] duration-200 ease-in-out flex items-center">
+                <div className="py-3 px-4 rounded-full bg-transparent border-[#0aba90] border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out flex items-center">
                     <button
                         title="Minus Quantity"
                         className="p-2"
@@ -71,11 +71,11 @@ export default function QuantityCartBuy(props) {
                             fill="none"
                             className="w-[14px] h-[14px]"
                         >
-                            <path d="M13 1L4.76837e-07 1" stroke="white" />
+                            <path d="M13 1L4.76837e-07 1" stroke="black" />
                         </svg>
                     </button>
                     <input
-                        className="appearance-none w-[40px] text-center bg-transparent text-white pointer-events-none"
+                        className="appearance-none w-[40px] text-center bg-transparent text-black pointer-events-none"
                         type="text"
                         id="quantity"
                         name="quantity"
@@ -98,11 +98,11 @@ export default function QuantityCartBuy(props) {
                         >
                             <path
                                 d="M7.30859 0.0219727V13.3691"
-                                stroke="white"
+                                stroke="black"
                             />
                             <path
                                 d="M13.9814 6.69531L0.634295 6.69531"
-                                stroke="white"
+                                stroke="black"
                             />
                         </svg>
                     </button>
@@ -114,7 +114,7 @@ export default function QuantityCartBuy(props) {
             <div className="relative mb-16 text-center">
                 <div className="relative">
                     <button
-                        className="w-full secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                        className="w-full secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                         title="ADD TO CART"
                         onClick={cartHandler}
                     >
@@ -142,12 +142,12 @@ export default function QuantityCartBuy(props) {
                         </svg>
                     </button>
                     {cartMessage && (
-                        <p className="w-full text-[#fc69f8] text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
+                        <p className="w-full text-[#0aba90] text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
                             {cartMessage}
                         </p>
                     )}
                     {cartErrorMessage && (
-                        <p className="text-[#30e5f3] text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
+                        <p className="text-[#ff596a] text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
                             {cartErrorMessage}
                         </p>
                     )}
@@ -155,7 +155,7 @@ export default function QuantityCartBuy(props) {
                 {cartMessage && (
                     <Link href="/cart">
                         <button
-                            className="w-full mt-10 secondary-font uppercase py-3 px-6 text-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                            className="w-full mt-10 secondary-font uppercase py-3 px-6 text-black rounded-[7px] bg-[#a9a9a9]  text-3xl shadow  duration-200 ease-in-out"
                             title="View Cart"
                         >
                             View Cart

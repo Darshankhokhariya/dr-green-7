@@ -35,7 +35,7 @@ export default function OrdersClient(props) {
             ))}
             <div className="text-center mt-6">
                 <button
-                    className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                    className="secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                     title={
                         take >= props.orders.length
                             ? "NO MORE TO SHOW"

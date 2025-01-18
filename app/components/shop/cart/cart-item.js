@@ -134,11 +134,11 @@ export default function CartItem(props) {
                                 fill="none"
                                 className="w-[14px] h-[14px]"
                             >
-                                <path d="M13 1L4.76837e-07 1" stroke="white" />
+                                <path d="M13 1L4.76837e-07 1" stroke="black" />
                             </svg>
                         </button>
                         <input
-                            className="appearance-none w-[40px] text-center bg-transparent text-white pointer-events-none"
+                            className="appearance-none w-[40px] text-center bg-transparent text-black pointer-events-none"
                             type="text"
                             id="quantity"
                             name="quantity"
@@ -161,11 +161,11 @@ export default function CartItem(props) {
                             >
                                 <path
                                     d="M7.30859 0.0219727V13.3691"
-                                    stroke="white"
+                                    stroke="black"
                                 />
                                 <path
                                     d="M13.9814 6.69531L0.634295 6.69531"
-                                    stroke="white"
+                                    stroke="black"
                                 />
                             </svg>
                         </button>

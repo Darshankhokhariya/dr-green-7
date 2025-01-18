@@ -54,12 +54,13 @@ export default function LoginForm(props) {
                             name="username"
                             id="username"
                             type="text"
+                            placeholder="Enter username"
                             autoComplete="username"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full"
                         />
                     </div>
                     {state?.errors?.username && (
-                        <p className="text-[#30e5f3]">
+                        <p className="text-red">
                             {state?.errors?.username}
                         </p>
                     )}
@@ -73,11 +74,12 @@ export default function LoginForm(props) {
                             id="password"
                             type="password"
                             autoComplete="password"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            placeholder="Enter password"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full"
                         />
                     </div>
                     {state?.errors?.password && (
-                        <p className="text-[#30e5f3]">
+                        <p className="text-red">
                             {state?.errors?.password}
                         </p>
                     )}
@@ -87,15 +89,13 @@ export default function LoginForm(props) {
                 <button
                     type="submit"
                     title="LOGIN"
-                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
-                        isPending ? "pointer-events-none" : ""
-                    }`}
+                    className={`secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] border-2 text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${isPending ? "pointer-events-none" : ""
+                        }`}
                 >
                     LOGIN
                     <svg
-                        className={`animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -119,7 +119,7 @@ export default function LoginForm(props) {
                 <Link href="/register">
                     <button
                         title="REGISTER"
-                        className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                        className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] bg-gray-200 text-gray-800 text-3xl shadow border-2 duration-200 ease-in-out"
                     >
                         REGISTER
                     </button>

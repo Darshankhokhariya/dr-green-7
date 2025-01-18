@@ -159,7 +159,7 @@ export default function EditAccountForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-[#fc69f8]">*</span>
+                        First Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -171,7 +171,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setFirstName(e.target.value)}
                             type="text"
                             autoComplete="given-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full"
                         />
                     </div>
                     {state?.errors?.firstName && (
@@ -182,7 +182,7 @@ export default function EditAccountForm(props) {
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-[#fc69f8]">*</span>
+                        Last Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -194,7 +194,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setLastName(e.target.value)}
                             type="text"
                             autoComplete="family-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.lastName && (
@@ -207,7 +207,7 @@ export default function EditAccountForm(props) {
             <div className="sm:grid grid-cols-2 gap-4">
                 <div className="mb-4 sm:mb-0">
                     <label htmlFor="email">
-                        Email Address <span className="text-[#fc69f8]">*</span>
+                        Email Address <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -219,7 +219,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setEmail(e.target.value)}
                             type="email"
                             autoComplete="email"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.email && (
@@ -230,14 +230,14 @@ export default function EditAccountForm(props) {
                 </div>
                 <div>
                     <label htmlFor="contactNumber">
-                        Contact Number <span className="text-[#fc69f8]">*</span>
+                        Contact Number <span className="text-[#0aba90]">*</span>
                     </label>
                     <PhoneInput
                         maxLength={20}
                         value={telValue}
                         withCountryCallingCode={true}
                         onChange={setTelHandler}
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         name="contactNumber"
                         id="contactNumber"
                         required
@@ -263,7 +263,7 @@ export default function EditAccountForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-[#fc69f8]">*</span>
+                        Address Line 1 <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -275,7 +275,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setAddress1(e.target.value)}
                             type="text"
                             autoComplete="address-line1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.address1 && (
@@ -295,7 +295,7 @@ export default function EditAccountForm(props) {
                             id="address2"
                             type="text"
                             autoComplete="address-line2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                 </div>
@@ -311,14 +311,14 @@ export default function EditAccountForm(props) {
                             value={landmark}
                             onChange={(e) => setLandmark(e.target.value)}
                             type="text"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                 </div>
                 <div>
                     <label htmlFor="city">
                         {countryCode == "GB" ? "Town" : "City"}{" "}
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -330,7 +330,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setCity(e.target.value)}
                             type="text"
                             autoComplete="address-level2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.city && (
@@ -344,7 +344,7 @@ export default function EditAccountForm(props) {
                 <div>
                     <label htmlFor="state">
                         {countryCode == "GB" ? "County" : "State"}{" "}
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -356,7 +356,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setAState(e.target.value)}
                             type="text"
                             autoComplete="address-level1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.state && (
@@ -367,7 +367,7 @@ export default function EditAccountForm(props) {
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-[#fc69f8]">*</span>
+                        Postal Code <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -379,7 +379,7 @@ export default function EditAccountForm(props) {
                             onChange={(e) => setPostalCode(e.target.value)}
                             type="text"
                             autoComplete="postal-code"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.postalCode && (
@@ -391,14 +391,14 @@ export default function EditAccountForm(props) {
             </div>
             <div>
                 <label htmlFor="countryCode">
-                    Country <span className="text-[#fc69f8]">*</span>
+                    Country <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <select
                         id="countryCode"
                         name="countryCode"
                         autoComplete="country"
-                        className="appearance-none p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="appearance-none p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         required
                         onChange={(e) => setCountryHandler(e.target.value)}
                         value={countryCode}
@@ -457,7 +457,7 @@ export default function EditAccountForm(props) {
                                     onChange={(e) =>
                                         setBusinessType(e.target.value)
                                     }
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -474,7 +474,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="organization"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -493,7 +493,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="address-line1"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -512,7 +512,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="address-line2"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -528,7 +528,7 @@ export default function EditAccountForm(props) {
                                         setBusinessLandmark(e.target.value)
                                     }
                                     type="text"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -545,7 +545,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="address-level2"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -562,7 +562,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="address-level1"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -581,7 +581,7 @@ export default function EditAccountForm(props) {
                                     }
                                     type="text"
                                     autoComplete="postal-code"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -593,7 +593,7 @@ export default function EditAccountForm(props) {
                                 id="businessCountryCode"
                                 name="businessCountryCode"
                                 autoComplete="country"
-                                className="appearance-none p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                className="appearance-none p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 onChange={(e) =>
                                     setBusinessCountryHandler(e.target.value)
                                 }
@@ -620,15 +620,13 @@ export default function EditAccountForm(props) {
                 <button
                     type="submit"
                     title="UPDATE"
-                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out ${
-                        isPending ? "pointer-events-none" : ""
-                    }`}
+                    className={`secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out ${isPending ? "pointer-events-none" : ""
+                        }`}
                 >
                     UPDATE
                     <svg
-                        className={`ml-2 animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`ml-2 animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -656,7 +654,7 @@ export default function EditAccountForm(props) {
                     </p>
                 )}
                 {state?.success && !isPending && (
-                    <p className="text-[#fc69f8] text-center">
+                    <p className="text-[#0aba90] text-center">
                         {state?.message}
                     </p>
                 )}

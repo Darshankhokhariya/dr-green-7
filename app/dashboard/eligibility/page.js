@@ -54,27 +54,27 @@ export default async function Eligibility() {
                 <div className="col-span-2 relative hidden md:block">
                     <DashboardNav />
                 </div>
-                <div className="rounded-[20px] border-2 border-[#30e5f3] p-8 xl:p-20 col-span-6">
-                    <p className="text-3xl md:text-5xl font-semibold mb-8 secondary-font">
+                <div className="rounded-[20px] border-2 border-black p-8 xl:p-20 col-span-6">
+                    <p className="text-2xl md:text-[28px] font-semibold mb-8">
                         My Eligibility - Your trusted source for Medical
                         Cannabis
                     </p>
-                    {formSubmitted ? (
+                    {!formSubmitted ? (
                         <div>
-                            {eligibile ? (
-                                <p className="text-[#fc69f8]">
+                            {!eligibile ? (
+                                <p className="text-[#0aba90]">
                                     You are already eligible.
                                 </p>
                             ) : (
                                 <div>
-                                    <p className="text-[#30e5f3] mb-4">
+                                    <p className="text-orange-500 mb-4">
                                         {"Submission made at: " +
                                             new Date(
                                                 formSubmitted
                                             ).toUTCString()}
                                     </p>
                                     {session?.user?.scheduledAppointmentAt ? (
-                                        <p className="text-[#30e5f3]">
+                                        <p className="text-orange-500">
                                             Please check your email for the
                                             details of your Zoom meeting.
                                         </p>
@@ -88,7 +88,7 @@ export default async function Eligibility() {
                         </div>
                     ) : (
                         <div>
-                            <p className="text-[#fc69f8] mb-8">
+                            <p className="text-red-500 mb-8">
                                 Please ensure all details are correct, as you
                                 cannot change this once submitted.
                             </p>

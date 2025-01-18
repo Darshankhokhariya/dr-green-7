@@ -99,15 +99,15 @@ export default function CartClient(props) {
     return (
         <div className="grid xl:grid-cols-3 gap-8">
             <div className="xl:col-span-2">
-                <div className="rounded-[20px] border-2 border-[#30e5f3]">
-                    <div className="grid grid-cols-3 sm:grid-cols-4 px-4 sm:px-8 py-4 border-b-2 border-[#30e5f3]">
-                        <p className="text-lg sm:text-2xl font-semibold sm:col-span-2 secondary-font text-[#30e5f3]">
+                <div className="rounded-[20px] border-2 border-[#808080]">
+                    <div className="grid grid-cols-3 sm:grid-cols-4 px-4 sm:px-8 py-4 border-b-2 border-[#808080]">
+                        <p className="text-lg sm:text-2xl font-semibold sm:col-span-2 secondary-font text-[#0aba90]">
                             Product
                         </p>
-                        <p className="text-lg sm:text-2xl font-semibold text-center secondary-font text-[#30e5f3]">
+                        <p className="text-lg sm:text-2xl font-semibold text-center secondary-font text-[#0aba90]">
                             Quantity
                         </p>
-                        <p className="text-lg sm:text-2xl font-semibold text-end secondary-font text-[#30e5f3]">
+                        <p className="text-lg sm:text-2xl font-semibold text-end secondary-font text-[#0aba90]">
                             Total
                         </p>
                     </div>
@@ -128,7 +128,7 @@ export default function CartClient(props) {
                                     />
                                 ))
                         ) : (
-                            <p className="col-span-2 text-white">
+                            <p className="col-span-2 text-black">
                                 No items in your cart.
                             </p>
                         )}
@@ -136,15 +136,14 @@ export default function CartClient(props) {
                 </div>
                 {cart?.cartItems && (
                     <button
-                        className="mt-4 float-right secondary-font uppercase py-3 px-6 text-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                        className="mt-4 float-right secondary-font uppercase py-3 px-6  rounded-[7px] bg-gray-200 text-gray-800 text-3xl shadow  duration-200 ease-in-out"
                         onClick={removeHandler}
                         title="CLEAR CART"
                     >
                         CLEAR CART
                         <svg
-                            className={`animate-spin ml-2 h-4 w-4 text-[#fc69f8] ${
-                                clearCartLoading ? "inline" : "hidden"
-                            }`}
+                            className={`animate-spin ml-2 h-4 w-4 text-[#fc69f8] ${clearCartLoading ? "inline" : "hidden"
+                                }`}
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -180,15 +179,14 @@ export default function CartClient(props) {
                                 Tax included. Shipping calculated at checkout.
                             </p>
                             <button
-                                className="w-full secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                                className="w-full secondary-font uppercase py-3 px-6 bg-[#0aba90] rounded-[7px] border-[#0aba90] border-2 text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                                 title="CHECKOUT"
                                 onClick={checkoutHandler}
                             >
                                 CHECKOUT
                                 <svg
-                                    className={`animate-spin ml-2 h-4 w-4 text-black ${
-                                        checkoutLoading ? "inline" : "hidden"
-                                    }`}
+                                    className={`animate-spin ml-2 h-4 w-4 text-black ${checkoutLoading ? "inline" : "hidden"
+                                        }`}
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -211,10 +209,10 @@ export default function CartClient(props) {
                         </div>
                     )}
                     {checkoutError && (
-                        <p className="text-[#30E5F3]">{checkoutError}</p>
+                        <p className="text-red">{checkoutError}</p>
                     )}
                     {checkoutSuccess && (
-                        <p className="text-[#FC69F8]">{checkoutSuccess}</p>
+                        <p className="text-[#0aba90]">{checkoutSuccess}</p>
                     )}
                 </div>
             </div>

@@ -77,7 +77,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-[#fc69f8]">*</span>
+                        First Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -87,7 +87,7 @@ export default function ReferForm(props) {
                             id="firstName"
                             type="text"
                             autoComplete="given-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.firstName}
                             readOnly
                         />
@@ -100,7 +100,7 @@ export default function ReferForm(props) {
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-[#fc69f8]">*</span>
+                        Last Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -110,7 +110,7 @@ export default function ReferForm(props) {
                             id="lastName"
                             type="text"
                             autoComplete="family-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.lastName}
                             readOnly
                         />
@@ -125,7 +125,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="dob">
-                        Date of Birth <span className="text-[#fc69f8]">*</span>
+                        Date of Birth <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -135,7 +135,7 @@ export default function ReferForm(props) {
                             id="dob"
                             type="date"
                             autoComplete="bday"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                             value={dob}
                             onChange={(e) => setDob(e.target.value)}
                         />
@@ -148,7 +148,7 @@ export default function ReferForm(props) {
                 </div>
                 <div>
                     <label htmlFor="gender">
-                        Gender <span className="text-[#fc69f8]">*</span>
+                        Gender <span className="text-[#0aba90]">*</span>
                     </label>
                     <div className="flex flex-wrap gap-4">
                         <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -161,7 +161,7 @@ export default function ReferForm(props) {
                                 className="mr-2 cursor-pointer"
                                 defaultChecked={
                                     props.userDetails?.medicalRecord?.gender ===
-                                    "male"
+                                        "male"
                                         ? "checked"
                                         : ""
                                 }
@@ -177,7 +177,7 @@ export default function ReferForm(props) {
                                 className="mr-2 cursor-pointer"
                                 defaultChecked={
                                     props.userDetails?.medicalRecord?.gender ===
-                                    "female"
+                                        "female"
                                         ? "checked"
                                         : ""
                                 }
@@ -193,7 +193,7 @@ export default function ReferForm(props) {
                                 className="mr-2 cursor-pointer"
                                 defaultChecked={
                                     props.userDetails?.medicalRecord?.gender ===
-                                    "other"
+                                        "other"
                                         ? "checked"
                                         : ""
                                 }
@@ -206,7 +206,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="email">
-                        Email Address <span className="text-[#fc69f8]">*</span>
+                        Email Address <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -216,7 +216,7 @@ export default function ReferForm(props) {
                             id="email"
                             type="email"
                             autoComplete="email"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.email}
                             readOnly
                         />
@@ -230,7 +230,7 @@ export default function ReferForm(props) {
                 <div>
                     <label htmlFor="confirm_email">
                         Confirm Email Address{" "}
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -239,7 +239,7 @@ export default function ReferForm(props) {
                             name="confirm_email"
                             id="confirm_email"
                             type="email"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.confirm_email && (
@@ -255,7 +255,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-[#fc69f8]">*</span>
+                        Address Line 1 <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -265,7 +265,7 @@ export default function ReferForm(props) {
                             id="address1"
                             type="text"
                             autoComplete="address-line1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].address1}
                             readOnly
                         />
@@ -285,7 +285,7 @@ export default function ReferForm(props) {
                             id="address2"
                             type="text"
                             autoComplete="address-line2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].address2}
                             readOnly
                         />
@@ -301,7 +301,7 @@ export default function ReferForm(props) {
                             maxLength={50}
                             id="landmark"
                             type="text"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].landmark}
                             readOnly
                         />
@@ -309,7 +309,7 @@ export default function ReferForm(props) {
                 </div>
                 <div>
                     <label htmlFor="city">
-                        City <span className="text-[#fc69f8]">*</span>
+                        City <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -319,7 +319,7 @@ export default function ReferForm(props) {
                             id="city"
                             type="text"
                             autoComplete="address-level2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].city}
                             readOnly
                         />
@@ -334,7 +334,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="state">
-                        State <span className="text-[#fc69f8]">*</span>
+                        State <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -344,7 +344,7 @@ export default function ReferForm(props) {
                             id="state"
                             type="text"
                             autoComplete="address-level1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].state}
                             readOnly
                         />
@@ -357,7 +357,7 @@ export default function ReferForm(props) {
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-[#fc69f8]">*</span>
+                        Postal Code <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -367,7 +367,7 @@ export default function ReferForm(props) {
                             id="postalCode"
                             type="text"
                             autoComplete="postal-code"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                             value={props.userDetails.shippings[0].postalCode}
                             readOnly
                         />
@@ -381,7 +381,7 @@ export default function ReferForm(props) {
             </div>
             <div>
                 <label htmlFor="country">
-                    Country <span className="text-[#fc69f8]">*</span>
+                    Country <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <input
@@ -389,7 +389,7 @@ export default function ReferForm(props) {
                         id="country"
                         name="country"
                         autoComplete="country"
-                        className="appearance-none p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
+                        className="appearance-none p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium opacity-50"
                         value={props.userDetails.shippings[0].country}
                         readOnly
                     />
@@ -1152,7 +1152,7 @@ export default function ReferForm(props) {
                 <label htmlFor="other_medical_condition">
                     Please provide further details of your medical condition.{" "}
                     {otherMedicalCondition && (
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     )}
                 </label>
                 <div>
@@ -1165,7 +1165,7 @@ export default function ReferForm(props) {
                                 .otherMedicalCondition
                         }
                         type="text"
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         required={otherMedicalCondition ? true : false}
                     />
                 </div>
@@ -2166,7 +2166,7 @@ export default function ReferForm(props) {
                     Please provide further details of your prescribed medicines
                     / treatments.{" "}
                     {otherMedicinesTreatments && (
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     )}
                 </label>
                 <div>
@@ -2175,7 +2175,7 @@ export default function ReferForm(props) {
                         name="other_medicines_treatments"
                         id="other_medicines_treatments"
                         type="text"
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         required={otherMedicinesTreatments ? true : false}
                         defaultValue={
                             props.userDetails?.medicalRecord
@@ -2208,7 +2208,7 @@ export default function ReferForm(props) {
                     palpitations, heart attack (MI), stroke, angina, chest pain,
                     shortness of breath, arrhythmias (funny heart beats),
                     pacemaker, or taking any heart medications?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2249,7 +2249,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Are you currently being treated for cancer or undergoing any
-                    cancer treatments? <span className="text-[#fc69f8]">*</span>
+                    cancer treatments? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2290,7 +2290,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Are you currently taking Immunosuppressants or Immunotherapy
-                    medication? <span className="text-[#fc69f8]">*</span>
+                    medication? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2332,7 +2332,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Do you have any history of Liver Disease including
                     hepatitis, elevated liver enzyme function blood tests, fatty
-                    liver cirrhosis? <span className="text-[#fc69f8]">*</span>
+                    liver cirrhosis? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2374,7 +2374,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Psychiatric history - Have you ever been referred to a
                     psychiatrist health service?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2415,7 +2415,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have You Ever Been Diagnosed With?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2548,7 +2548,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Do you currently or have you ever felt suicidal or had
-                    suicidal thoughts? <span className="text-[#fc69f8]">*</span>
+                    suicidal thoughts? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2590,7 +2590,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Family History - Does anyone in your family suffer from any
                     of the following conditions and if so, what is their
-                    relation to you? <span className="text-[#fc69f8]">*</span>
+                    relation to you? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2718,7 +2718,7 @@ export default function ReferForm(props) {
                         id="medicalHistory7Relation"
                         defaultValue={medicalHistory7Relative}
                         type="text"
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         placeholder="ie. parent/sibling/cousin/uncle/aunt/child"
                     />
                 </div>
@@ -2735,7 +2735,7 @@ export default function ReferForm(props) {
                     marijuana, ecstasy, GHB, legal highs such as spice,
                     prescription drug abuse (such as opioids, prescription
                     painkillers or benzodiazepines)?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2776,7 +2776,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Do you have a history of alcohol abuse or dependency?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2817,7 +2817,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have you ever been under the care of drug and alcohol
-                    services? <span className="text-[#fc69f8]">*</span>
+                    services? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2858,7 +2858,7 @@ export default function ReferForm(props) {
             <div>
                 <label htmlFor="medicalHistory11">
                     How many units of Alcohol do you drink per week?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <input
@@ -2870,7 +2870,7 @@ export default function ReferForm(props) {
                         }
                         type="text"
                         required
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                     />
                 </div>
                 {state?.errors?.medicalHistory11 && (
@@ -2883,7 +2883,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Do you use cannabis to reduce or eliminate the use of any
                     medications that have been prescribed for your medical
-                    condition? <span className="text-[#fc69f8]">*</span>
+                    condition? <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2925,7 +2925,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Cannabis History - If you do use cannabis currently, how
                     often do you use cannabis?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3002,7 +3002,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     If you have used cannabis, how have you used cannabis?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3100,7 +3100,7 @@ export default function ReferForm(props) {
             <div>
                 <label htmlFor="medicalHistory15">
                     How much cannabis do you currently use per day?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <input
@@ -3112,7 +3112,7 @@ export default function ReferForm(props) {
                         }
                         type="text"
                         required
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         placeholder="ie. number
                     of ounces, grams or joints per day"
                     />
@@ -3126,7 +3126,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have you had any serious reaction to cannabis?{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3180,7 +3180,7 @@ export default function ReferForm(props) {
                                 ?.prescriptionsSupplements
                         }
                         type="text"
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                     />
                 </div>
                 {state?.errors?.prescriptionsSupplements && (
@@ -3193,7 +3193,7 @@ export default function ReferForm(props) {
                 Consent Form
             </p>
             <div
-                className="text-sm sm:text-lg p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium max-h-[400px] overflow-y-scroll consent-form"
+                className="text-sm sm:text-lg p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium max-h-[400px] overflow-y-scroll consent-form"
                 dangerouslySetInnerHTML={{ __html: props.consentForm }}
             />
             <div>
@@ -3207,7 +3207,7 @@ export default function ReferForm(props) {
                         required
                     />
                     I agree to the above statement.{" "}
-                    <span className="text-[#fc69f8]">*</span>
+                    <span className="text-[#0aba90]">*</span>
                 </label>
                 {state?.errors?.consent_agree && (
                     <p className="text-[#30e5f3] text-sm leading-tight mt-2">
@@ -3219,15 +3219,13 @@ export default function ReferForm(props) {
                 <button
                     type="submit"
                     title="Submit"
-                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
-                        isPending ? "pointer-events-none" : ""
-                    }`}
+                    className={`secondary-font uppercase py-3 px-6 bg-primary text-white rounded-[7px] hover:bg-primary/90 text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${isPending ? "pointer-events-none" : ""
+                        }`}
                 >
                     Submit
                     <svg
-                        className={`animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -3254,7 +3252,7 @@ export default function ReferForm(props) {
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#fc69f8] text-center">{state?.message}</p>
+                <p className="text-[#0aba90] text-center">{state?.message}</p>
             )}
         </form>
     );

@@ -64,7 +64,7 @@ export default function OrdersListItem(props) {
                 <div>
                     <Link href={`/dashboard/orders/${props.orderId}`}>
                         <button
-                            className="w-full secondary-font uppercase py-3 px-6 rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-2xl leading-none shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                            className="w-full secondary-font uppercase py-3 px-6 rounded-[7px] bg-[#0aba90] border-[#0aba90] text-white text-2xl leading-none shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                             title="ORDER DETAILS"
                         >
                             ORDER DETAILS
@@ -72,7 +72,7 @@ export default function OrdersListItem(props) {
                     </Link>
                 </div>
             </div>
-            <hr className="border-none h-[2px] bg-[#30e5f3] mb-8 mt-8" />
+            <hr className="border-none h-[2px] bg-[#717171] mb-8 mt-8" />
         </div>
     );
 }

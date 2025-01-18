@@ -91,7 +91,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-[#fc69f8]">*</span>
+                        First Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -100,19 +100,20 @@ export default function RegisterForm() {
                             name="firstName"
                             id="firstName"
                             type="text"
+                            placeholder="Enter firstName"
                             autoComplete="given-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full"
                         />
                     </div>
                     {state?.errors?.firstName && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.firstName}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-[#fc69f8]">*</span>
+                        Last Name <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -120,13 +121,14 @@ export default function RegisterForm() {
                             maxLength={20}
                             name="lastName"
                             id="lastName"
+                            placeholder="Enter lastName"
                             type="text"
                             autoComplete="family-name"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.lastName && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.lastName}
                         </p>
                     )}
@@ -135,7 +137,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="email">
-                        Email Address <span className="text-[#fc69f8]">*</span>
+                        Email Address <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -144,19 +146,20 @@ export default function RegisterForm() {
                             name="email"
                             id="email"
                             type="email"
+                            placeholder="Enter email"
                             autoComplete="email"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.email && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.email}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="contactNumber">
-                        Contact Number <span className="text-[#fc69f8]">*</span>
+                        Contact Number <span className="text-[#0aba90]">*</span>
                     </label>
                     <PhoneInput
                         maxLength={20}
@@ -164,7 +167,7 @@ export default function RegisterForm() {
                         withCountryCallingCode={true}
                         defaultCountry="US"
                         onChange={setTelHandler}
-                        className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         name="contactNumber"
                         id="contactNumber"
                         required
@@ -173,12 +176,13 @@ export default function RegisterForm() {
                         id="phoneCode"
                         name="phoneCode"
                         autoComplete="tel-country-code"
+                        placeholder="Enter phoneCode"
                         type="hidden"
                         required
                         value={phoneCodeValue}
                     />
                     {state?.errors?.contactNumber && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.contactNumber}
                         </p>
                     )}
@@ -187,7 +191,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="username">
-                        Username <span className="text-[#fc69f8]">*</span>
+                        Username <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -197,33 +201,35 @@ export default function RegisterForm() {
                             name="username"
                             id="username"
                             type="text"
+                            placeholder="Enter username"
                             autoComplete="username"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.username && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.username}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="password">
-                        Password <span className="text-[#fc69f8]">*</span>
+                        Password <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
                             maxLength={100}
                             required
                             name="password"
+                            placeholder="Enter password"
                             id="password"
                             type="password"
                             autoComplete="password"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.password && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.password}
                         </p>
                     )}
@@ -235,7 +241,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-[#fc69f8]">*</span>
+                        Address Line 1 <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -243,13 +249,14 @@ export default function RegisterForm() {
                             maxLength={50}
                             name="address1"
                             id="address1"
+                            placeholder="Enter address1"
                             type="text"
                             autoComplete="address-line1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.address1 && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.address1}
                         </p>
                     )}
@@ -261,9 +268,10 @@ export default function RegisterForm() {
                             name="address2"
                             maxLength={50}
                             id="address2"
+                            placeholder="Enter address2"
                             type="text"
                             autoComplete="address-line2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                 </div>
@@ -277,14 +285,15 @@ export default function RegisterForm() {
                             maxLength={50}
                             id="landmark"
                             type="text"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            placeholder="Enter landmark"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                 </div>
                 <div>
                     <label htmlFor="city">
                         <span ref={labelCity}>City</span>{" "}
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -293,12 +302,13 @@ export default function RegisterForm() {
                             name="city"
                             id="city"
                             type="text"
+                            placeholder="Enter city"
                             autoComplete="address-level2"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.city && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.city}
                         </p>
                     )}
@@ -308,7 +318,7 @@ export default function RegisterForm() {
                 <div>
                     <label htmlFor="state">
                         <span ref={labelState}>State</span>{" "}
-                        <span className="text-[#fc69f8]">*</span>
+                        <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -317,19 +327,20 @@ export default function RegisterForm() {
                             name="state"
                             id="state"
                             type="text"
+                            placeholder="Enter state"
                             autoComplete="address-level1"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.state && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {state?.errors?.state}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-[#fc69f8]">*</span>
+                        Postal Code <span className="text-[#0aba90]">*</span>
                     </label>
                     <div>
                         <input
@@ -337,13 +348,14 @@ export default function RegisterForm() {
                             maxLength={15}
                             name="postalCode"
                             id="postalCode"
+                            placeholder="Enter postalCode"
                             type="text"
                             autoComplete="postal-code"
-                            className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                            className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         />
                     </div>
                     {state?.errors?.postalCode && (
-                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                        <p className="text-red text-sm leading-tight mt-2">
                             {postalCode?.errors?.postalCode}
                         </p>
                     )}
@@ -351,14 +363,14 @@ export default function RegisterForm() {
             </div>
             <div>
                 <label htmlFor="countryCode">
-                    Country <span className="text-[#fc69f8]">*</span>
+                    Country <span className="text-[#0aba90]">*</span>
                 </label>
                 <div>
                     <select
                         id="countryCode"
                         name="countryCode"
                         autoComplete="country"
-                        className="appearance-none p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                        className="appearance-none p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                         required
                         onChange={(e) => setCountryHandler(e.target.value)}
                     >
@@ -379,7 +391,7 @@ export default function RegisterForm() {
                     />
                 </div>
                 {state?.errors?.countryCode && (
-                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
+                    <p className="text-red text-sm leading-tight mt-2">
                         {state?.errors?.countryCode}
                     </p>
                 )}
@@ -413,7 +425,7 @@ export default function RegisterForm() {
                                     name="businessType"
                                     id="businessType"
                                     type="text"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -426,7 +438,7 @@ export default function RegisterForm() {
                                     id="businessName"
                                     type="text"
                                     autoComplete="organization"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -441,7 +453,7 @@ export default function RegisterForm() {
                                     id="businessAddress1"
                                     type="text"
                                     autoComplete="address-line1"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -456,7 +468,7 @@ export default function RegisterForm() {
                                     id="businessAddress2"
                                     type="text"
                                     autoComplete="address-line2"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -468,7 +480,7 @@ export default function RegisterForm() {
                                     name="businessLandmark"
                                     id="businessLandmark"
                                     type="text"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -483,7 +495,7 @@ export default function RegisterForm() {
                                     id="businessCity"
                                     type="text"
                                     autoComplete="address-level2"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -498,7 +510,7 @@ export default function RegisterForm() {
                                     id="businessState"
                                     type="text"
                                     autoComplete="address-level1"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -513,7 +525,7 @@ export default function RegisterForm() {
                                     id="businessPostalCode"
                                     type="text"
                                     autoComplete="postal-code"
-                                    className="p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                    className="p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 />
                             </div>
                         </div>
@@ -525,7 +537,7 @@ export default function RegisterForm() {
                                 id="businessCountryCode"
                                 name="businessCountryCode"
                                 autoComplete="country"
-                                className="appearance-none p-4 rounded-[7px] border-2 border-[#30e5f3] font-normal bg-transparent outline-0 w-full font-medium"
+                                className="appearance-none p-4 rounded-[7px] border-2 border-[#0aba90] font-normal bg-transparent outline-0 w-full font-medium"
                                 onChange={(e) =>
                                     setBusinessCountryHandler(e.target.value)
                                 }
@@ -554,15 +566,13 @@ export default function RegisterForm() {
                 <button
                     type="submit"
                     title="REGISTER"
-                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
-                        isPending ? "pointer-events-none" : ""
-                    }`}
+                    className={`secondary-font uppercase py-3 px-6 rounded-[7px] bg-gray-200 text-gray-800 border-2 text-3xl shadow duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${isPending ? "pointer-events-none" : ""
+                        }`}
                 >
                     REGISTER
                     <svg
-                        className={`animate-spin h-4 w-4 text-black ${
-                            isPending ? "inline" : "hidden"
-                        }`}
+                        className={`animate-spin h-4 w-4 text-black ${isPending ? "inline" : "hidden"
+                            }`}
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -586,19 +596,19 @@ export default function RegisterForm() {
                 <Link href="/login">
                     <button
                         title="LOGIN"
-                        className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                        className="secondary-font uppercase py-3 px-6 rounded-[7px] bg-[#0aba90] border-[#0aba90] border-2 text-white text-3xl shadow hover:shadow-[0_0_15px_0px_#0aba90] duration-200 ease-in-out"
                     >
                         LOGIN
                     </button>
                 </Link>
             </div>
             {state?.errors?.system && (
-                <p className="text-[#30e5f3] text-center">
+                <p className="text-red text-center">
                     {state?.errors?.system}
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#fc69f8] text-center">{state?.message}</p>
+                <p className="text-[#0aba90] text-center">{state?.message}</p>
             )}
         </form>
     );
